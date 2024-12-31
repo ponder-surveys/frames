@@ -13,7 +13,7 @@ let chainChanged: Connector['onChainChanged'] | undefined
 let disconnect: Connector['onDisconnect'] | undefined
 
 export function farcasterFrame() {
-  let connected = true
+  let connected = false
 
   return createConnector<typeof FrameSDK.wallet.ethProvider>((config) => ({
     id: 'farcaster',
